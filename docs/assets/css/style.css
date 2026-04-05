@@ -220,10 +220,40 @@ body {
 }
 .stats-row {
   display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 32px;
   border-left: 2px solid var(--accent-primary);
   padding-left: 20px;
+}
+.hero-lang-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-languages {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-left: 8px;
+  border-left: 1px solid rgba(255,255,255,0.1);
+}
+.hero-lang-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-lang-item .fi {
+  width: 1.2em;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.hero-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .stat-item {
   display: flex;
@@ -766,6 +796,13 @@ textarea.form-control {
     justify-content: center;
     border-left: none;
     padding-left: 0;
+  }
+  .stats-row {
+    justify-content: center;
+  }
+  .hero-social {
+    flex-direction: row;
+    margin-left: 0;
   }
   .btn-group {
     justify-content: center;
