@@ -793,16 +793,24 @@ textarea.form-control {
     margin: 0 auto 40px;
   }
   .stats-row {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
     border-left: none;
     padding-left: 0;
   }
-  .stats-row {
-    justify-content: center;
+  .hero-lang-social {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-languages {
+    flex-direction: row;
+    gap: 10px;
   }
   .hero-social {
     flex-direction: row;
-    margin-left: 0;
+    gap: 10px;
   }
   .btn-group {
     justify-content: center;
